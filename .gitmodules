@@ -1,0 +1,5 @@
+[submodule "Carthage/Checkouts/JSQMessagesViewController"]
+	url = https://github.com/jessesquires/JSQMessagesViewController.git
+[submodule "JSQMessagesViewController"]
+	path = JSQMessagesViewController
+	url = git@github.com:jessesquires/JSQMessagesViewController.git
