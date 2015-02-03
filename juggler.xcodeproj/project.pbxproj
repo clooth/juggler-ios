@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		0323F9881A79EC6000175047 /* sentences.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0323F9871A79EC6000175047 /* sentences.txt */; };
 		0323F98A1A79ED7100175047 /* Juggler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323F9891A79ED7100175047 /* Juggler.swift */; };
-		03472C5D1A7BAC0A00D95E8B /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03472C5C1A7BAC0A00D95E8B /* MessageViewModel.swift */; };
 		03472C5F1A7BACBA00D95E8B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03472C5E1A7BACBA00D95E8B /* Message.swift */; };
-		03472C621A7BAE6500D95E8B /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03472C611A7BAE6500D95E8B /* MessagesTableViewController.swift */; };
+		03472C621A7BAE6500D95E8B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03472C611A7BAE6500D95E8B /* MessagesViewController.swift */; };
+		038D76AB1A80C20D00A184F4 /* TwitterAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D76AA1A80C20D00A184F4 /* TwitterAuthHelper.swift */; };
+		038D76AD1A80CA2100A184F4 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D76AC1A80CA2100A184F4 /* AuthViewController.swift */; };
 		03A8572A1A79E23800F94DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A857291A79E23800F94DAC /* AppDelegate.swift */; };
 		03A8572C1A79E23800F94DAC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8572B1A79E23800F94DAC /* FirstViewController.swift */; };
 		03A8572E1A79E23800F94DAC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8572D1A79E23800F94DAC /* SecondViewController.swift */; };
@@ -19,6 +20,7 @@
 		03A857331A79E23800F94DAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A857321A79E23800F94DAC /* Images.xcassets */; };
 		03A857361A79E23800F94DAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A857341A79E23800F94DAC /* LaunchScreen.xib */; };
 		03A857421A79E23800F94DAC /* jugglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A857411A79E23800F94DAC /* jugglerTests.swift */; };
+		F120015DFDAFBBCD083C3882 /* libPods-juggler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6E8F9643F918BFA23821E8 /* libPods-juggler.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,11 @@
 /* Begin PBXFileReference section */
 		0323F9871A79EC6000175047 /* sentences.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sentences.txt; sourceTree = "<group>"; };
 		0323F9891A79ED7100175047 /* Juggler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Juggler.swift; sourceTree = "<group>"; };
-		03472C5C1A7BAC0A00D95E8B /* MessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		03472C5E1A7BACBA00D95E8B /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		03472C611A7BAE6500D95E8B /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		03472C611A7BAE6500D95E8B /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		03472C711A7BB2DF00D95E8B /* juggler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "juggler-Bridging-Header.h"; sourceTree = "<group>"; };
+		038D76AA1A80C20D00A184F4 /* TwitterAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAuthHelper.swift; sourceTree = "<group>"; };
+		038D76AC1A80CA2100A184F4 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		03A857241A79E23800F94DAC /* juggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = juggler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A857281A79E23800F94DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03A857291A79E23800F94DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,9 @@
 		03A8573B1A79E23800F94DAC /* jugglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jugglerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A857401A79E23800F94DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03A857411A79E23800F94DAC /* jugglerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jugglerTests.swift; sourceTree = "<group>"; };
+		3F6E8F9643F918BFA23821E8 /* libPods-juggler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-juggler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F24E04023A12F85EC54F01 /* Pods-juggler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-juggler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-juggler/Pods-juggler.debug.xcconfig"; sourceTree = "<group>"; };
+		E5FC5CB49C189C5AB3AC19D2 /* Pods-juggler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-juggler.release.xcconfig"; path = "Pods/Target Support Files/Pods-juggler/Pods-juggler.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F120015DFDAFBBCD083C3882 /* libPods-juggler.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +79,8 @@
 		03472C571A7BA9B800D95E8B /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				038D76A91A80C1FB00A184F4 /* authentication */,
+				03A551411A7BB59100F840D2 /* common */,
 				03472C591A7BA9C600D95E8B /* conversations */,
 				03472C601A7BAE3D00D95E8B /* messages */,
 				03472C581A7BA9BE00D95E8B /* contacts */,
@@ -104,10 +114,33 @@
 			isa = PBXGroup;
 			children = (
 				03472C5E1A7BACBA00D95E8B /* Message.swift */,
-				03472C5C1A7BAC0A00D95E8B /* MessageViewModel.swift */,
-				03472C611A7BAE6500D95E8B /* MessagesTableViewController.swift */,
+				03472C611A7BAE6500D95E8B /* MessagesViewController.swift */,
 			);
 			name = messages;
+			sourceTree = "<group>";
+		};
+		03472C631A7BB20100D95E8B /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		038D76A91A80C1FB00A184F4 /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+				038D76AA1A80C20D00A184F4 /* TwitterAuthHelper.swift */,
+				038D76AC1A80CA2100A184F4 /* AuthViewController.swift */,
+			);
+			name = authentication;
+			sourceTree = "<group>";
+		};
+		03A551411A7BB59100F840D2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				0323F9891A79ED7100175047 /* Juggler.swift */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 		03A8571B1A79E23800F94DAC = {
@@ -116,6 +149,8 @@
 				03A857261A79E23800F94DAC /* juggler */,
 				03A8573E1A79E23800F94DAC /* jugglerTests */,
 				03A857251A79E23800F94DAC /* Products */,
+				3E75B35365A3B5C8B18EAD2C /* Pods */,
+				F956E3B0CF1A082FCAC90E27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,8 +173,8 @@
 				03A8572F1A79E23800F94DAC /* Main.storyboard */,
 				03A857321A79E23800F94DAC /* Images.xcassets */,
 				03A857341A79E23800F94DAC /* LaunchScreen.xib */,
+				03472C631A7BB20100D95E8B /* Dependencies */,
 				03A857271A79E23800F94DAC /* Supporting Files */,
-				0323F9891A79ED7100175047 /* Juggler.swift */,
 			);
 			path = juggler;
 			sourceTree = "<group>";
@@ -147,6 +182,7 @@
 		03A857271A79E23800F94DAC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03472C711A7BB2DF00D95E8B /* juggler-Bridging-Header.h */,
 				03A857281A79E23800F94DAC /* Info.plist */,
 				0323F9871A79EC6000175047 /* sentences.txt */,
 			);
@@ -170,6 +206,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3E75B35365A3B5C8B18EAD2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79F24E04023A12F85EC54F01 /* Pods-juggler.debug.xcconfig */,
+				E5FC5CB49C189C5AB3AC19D2 /* Pods-juggler.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F956E3B0CF1A082FCAC90E27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F6E8F9643F918BFA23821E8 /* libPods-juggler.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03A857451A79E23800F94DAC /* Build configuration list for PBXNativeTarget "juggler" */;
 			buildPhases = (
+				5F16AD7AFBAF9365878F7472 /* Check Pods Manifest.lock */,
 				03A857201A79E23800F94DAC /* Sources */,
 				03A857211A79E23800F94DAC /* Frameworks */,
 				03A857221A79E23800F94DAC /* Resources */,
+				A4F87410C2B1D0A997572DA2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +288,19 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				es,
+				fr,
+				he,
+				it,
+				nl,
+				pl,
+				pt,
+				ro,
+				ru,
+				tr,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 03A8571B1A79E23800F94DAC;
 			productRefGroup = 03A857251A79E23800F94DAC /* Products */;
@@ -266,15 +334,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F16AD7AFBAF9365878F7472 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A4F87410C2B1D0A997572DA2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-juggler/Pods-juggler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03A857201A79E23800F94DAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0323F98A1A79ED7100175047 /* Juggler.swift in Sources */,
+				038D76AB1A80C20D00A184F4 /* TwitterAuthHelper.swift in Sources */,
 				03A8572E1A79E23800F94DAC /* SecondViewController.swift in Sources */,
-				03472C621A7BAE6500D95E8B /* MessagesTableViewController.swift in Sources */,
-				03472C5D1A7BAC0A00D95E8B /* MessageViewModel.swift in Sources */,
+				03472C621A7BAE6500D95E8B /* MessagesViewController.swift in Sources */,
+				038D76AD1A80CA2100A184F4 /* AuthViewController.swift in Sources */,
 				03472C5F1A7BACBA00D95E8B /* Message.swift in Sources */,
 				03A8572A1A79E23800F94DAC /* AppDelegate.swift in Sources */,
 				03A8572C1A79E23800F94DAC /* FirstViewController.swift in Sources */,
@@ -398,23 +500,30 @@
 		};
 		03A857461A79E23800F94DAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F24E04023A12F85EC54F01 /* Pods-juggler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = juggler/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "juggler/juggler-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		03A857471A79E23800F94DAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5FC5CB49C189C5AB3AC19D2 /* Pods-juggler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = juggler/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "juggler/juggler-Bridging-Header.h";
 			};
 			name = Release;
 		};
