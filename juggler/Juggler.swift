@@ -11,13 +11,10 @@ import UIKit
 
 
 class Juggler {
-  var markovChain: [String: [String]]
+  var markovChain: [String: [String]] = [:]
 
   init() {
-    markovChain = [:]
-
-    markovChain.updateValue([], forKey: "_start")
-    markovChain.updateValue([], forKey: "_end")
+    forgetEverything()
   }
 
   func learnSentence(sentence: String) {
@@ -56,6 +53,13 @@ class Juggler {
         }
       }
     }
+  }
+
+  func forgetEverything() {
+    markovChain = [:]
+
+    markovChain.updateValue([], forKey: "_start")
+    markovChain.updateValue([], forKey: "_end")
   }
 
   func generateSentence() -> String {
